@@ -1,13 +1,13 @@
-
 def mod_pow(base, power, mod=None):
     """
+    Implements divide and conquere binary exponetiation algorithm
+    Complexity: O(log power) 
+    source: https://cp-algorithms.com/algebra/binary-exp.html
     Params:
     @base: base number which needs to be multiplied
     @power: power to which base should be raised
     @mod: modulas with which number should be mod'ed
     returns: (base^power)%mod
-    Implements divide and conquere binary exponetiation algorithm
-    Complexity: O(log power) 
     """
     if mod:
         base %= mod
